@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Hotel Ratisbona</title>
+
+    <link rel="stylesheet" href="estilo-formulario.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<section class="formulario-hotel">
+
+    <!-- OSCURECER FONDO -->
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden"
+            name="access_key"
+            value="cd53c601-377b-4520-b669-51ff1e293b2d">
+
+            <h2>Contacto</h2>
+
+            <div class="input-group">
+
+                <!-- NOMBRE -->
+                <label for="nombre">
+                    <i class="fa-solid fa-user"></i>
+                    Nombre y Apellidos
+                </label>
+
+                <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresa tu nombre"
+                required>
+
+                <!-- TELEFONO -->
+                <label for="telefono">
+                    <i class="fa-solid fa-phone"></i>
+                    Teléfono
+                </label>
+
+                <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Ingrese su número"
+                required>
+
+                <!-- EMAIL -->
+                <label for="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    Gmail
+                </label>
+
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="correo@gmail.com"
+                required>
+
+                <!-- FECHA -->
+                <label for="fecha">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Fecha
+                </label>
+
+                <input
+                type="date"
+                id="fecha"
+                name="fecha"
+                required>
+
+                <!-- MENSAJE -->
+                <label for="mensaje">
+                    <i class="fa-solid fa-comment"></i>
+                    Asunto
+                </label>
+
+                <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribe tu consulta aquí..."></textarea>
+
+                <!-- BOTON -->
+                <button type="submit" class="btn">
+                    Enviar Mensaje
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+</body>
+</html>
